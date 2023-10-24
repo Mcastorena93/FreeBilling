@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "AqD/w7YoAlCTnd5Iz5mMPuTOV6Htkpkm1o47s2hyXdI=",
+  "Source": "FreeBilling.Web",
+  "BasePath": "_content/FreeBilling.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FreeBilling.Web\\wwwroot",
+      "Source": "FreeBilling.Web",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
+      "BasePath": "_content/FreeBilling.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\index.html",
+      "SourceId": "FreeBilling.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
+      "BasePath": "_content/FreeBilling.Web",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
