@@ -25,3 +25,5 @@ C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\obj\Debug\net6.0\FreeBill
 C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\obj\Debug\net6.0\FreeBilling.Web.genruntimeconfig.cache
 C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\obj\Debug\net6.0\ref\FreeBilling.Web.dll
 C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\bin\Debug\net6.0\FreeBilling.Web.staticwebassets.runtime.json
+C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\obj\Debug\net6.0\FreeBilling.Web.RazorAssemblyInfo.cache
+C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\obj\Debug\net6.0\FreeBilling.Web.RazorAssemblyInfo.cs
