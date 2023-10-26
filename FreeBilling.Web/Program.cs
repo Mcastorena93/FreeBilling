@@ -1,3 +1,5 @@
+using FreeBilling.Web.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -5,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 
+builder.Services.AddTransient<IEmailServices, DevTimeEmailServices>();
 var app = builder.Build();
 
 
