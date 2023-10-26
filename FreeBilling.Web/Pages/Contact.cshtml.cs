@@ -1,6 +1,7 @@
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Security.Cryptography.X509Certificates;
+
 
 namespace FreeBilling.Web.Pages
 {
@@ -8,12 +9,15 @@ namespace FreeBilling.Web.Pages
     {
         public string Title { get; set; } = "Contact Me";
         public string Message { get; set; } = " ";
+
+        [BindProperty]
+        public ContactViewModel Contact { get; set; }  = new ContactViewModel();
         public void OnGet()
         {
-            
+
         }
 
-        public void OnPost() 
+        public void OnPost()
         {
             Message = "Not Implemented";
         }
