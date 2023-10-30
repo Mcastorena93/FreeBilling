@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yBhS68Iusz1CqWmHflnGTtyf4aa0mHXXEUdMi4zCfiWOZQyeBIUDeqfCxtlLK71e1YDQ2njeX+HBUTpzgohmVA==",
+  "dgSpecHash": "w4yjIJZyUtLBglcYbTdENotjbSllg+ielvo9597E5ksONYsGcKrua2eEaOBzXveA8t5e8FgjTcNCuhewrE2UVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\FreeBilling.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\MCCM\\.nuget\\packages\\node.js\\0.12.7\\node.js.0.12.7.nupkg.sha512",
+    "C:\\Users\\MCCM\\.nuget\\packages\\nogit\\0.1.0\\nogit.0.1.0.nupkg.sha512",
+    "C:\\Users\\MCCM\\.nuget\\packages\\npm\\3.5.2\\npm.3.5.2.nupkg.sha512"
+  ],
   "logs": []
 }
