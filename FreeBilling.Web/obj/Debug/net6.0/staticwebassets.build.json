@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AqD/w7YoAlCTnd5Iz5mMPuTOV6Htkpkm1o47s2hyXdI=",
+  "Hash": "VxVJI66Ofozr0SwgCd62JlzRDRG1cH3+CRRWznddo8E=",
   "Source": "FreeBilling.Web",
   "BasePath": "_content/FreeBilling.Web",
   "Mode": "Default",
@@ -32,6 +32,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\site.css",
+      "SourceId": "FreeBilling.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
+      "BasePath": "_content/FreeBilling.Web",
+      "RelativePath": "site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\site.src.css",
+      "SourceId": "FreeBilling.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
+      "BasePath": "_content/FreeBilling.Web",
+      "RelativePath": "site.src.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.src.css"
     }
   ]
 }
