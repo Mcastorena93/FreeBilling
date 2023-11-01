@@ -6,29 +6,57 @@ namespace FreeBilling.Web.Data
     public class BillingRepository : IBillingRepository
     {
         private readonly BillingContext _context;
+        private readonly ILogger _logger;
 
-        public BillingRepository(BillingContext context)
+        public BillingRepository(BillingContext context, ILogger<BillingRepository> logger)
         {
             _context = context;
         }
 
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
-            return await _context.Employees
-                .OrderBy(e => e.Name)
-                .ToListAsync();
+            try
+            {
+                return await _context.Employees
+                        .OrderBy(e => e.Name)
+                        .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Could not get Employees: {ex.Message}");
+                throw;
+            }
         }
 
         public async Task<IEnumerable<Customer>> GetCustomers()
         {
-            return await _context.Customers
-                .OrderBy(c => c.CompanyName)
-                .ToListAsync();
+            try
+            {
+                return await _context.Customers
+                        .OrderBy(c => c.CompanyName)
+                        .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Could not get Customers: {ex.Message}");
+                throw;
+            }
         }
 
         public async Task<bool> SaveChanges()
         {
-            return await _context.SaveChangesAsync() > 0;
+            try
+            {
+                return await _context.SaveChangesAsync() > 0;
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Could not save to the Database {ex.Message}");
+                throw;
+            }
         }
     }
 }
