@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\index.html",
+      "Id": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\site.css",
+      "Id": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\site.css",
       "PackagePath": "staticwebassets\\site.css"
     },
     {
-      "Id": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\site.src.css",
+      "Id": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\site.src.css",
       "PackagePath": "staticwebassets\\site.src.css"
     },
     {
