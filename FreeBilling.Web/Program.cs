@@ -14,7 +14,7 @@ configBuilder.AddJsonFile("appsettings.json")
     .AddCommandLine(args);
 
 builder.Services.AddDbContext<BillingContext>();
-
+builder.Services.AddScoped<IBillingRepository, BillingRepository>();
 // Razor pages dependency injections 
 
 builder.Services.AddRazorPages();
