@@ -5,9 +5,10 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 IConfigurationBuilder configBuilder = builder.Configuration;
+
 configBuilder.Sources.Clear();
 configBuilder.AddJsonFile("appsettings.json")
-    .AddJsonFile("appsettings.development.json", true)
+    .AddJsonFile("appsettings.Development.json", true)
     .AddUserSecrets(Assembly.GetExecutingAssembly())
     .AddEnvironmentVariables()
     .AddCommandLine(args);

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bwGK0J0eph+SQH7uKZeJeS0dnPccwRHija3/zQeCVSE=",
+  "Hash": "VxVJI66Ofozr0SwgCd62JlzRDRG1cH3+CRRWznddo8E=",
   "Source": "FreeBilling.Web",
   "BasePath": "_content/FreeBilling.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FreeBilling.Web\\wwwroot",
       "Source": "FreeBilling.Web",
-      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
       "BasePath": "_content/FreeBilling.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\index.html",
       "SourceId": "FreeBilling.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
       "BasePath": "_content/FreeBilling.Web",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\site.css",
+      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\site.css",
       "SourceId": "FreeBilling.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
       "BasePath": "_content/FreeBilling.Web",
       "RelativePath": "site.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\site.css"
     },
     {
-      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\site.src.css",
+      "Identity": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\site.src.css",
       "SourceId": "FreeBilling.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MCCM\\source\\repos\\FreeBilling\\FreeBilling.Web\\wwwroot\\",
       "BasePath": "_content/FreeBilling.Web",
       "RelativePath": "site.src.css",
       "AssetKind": "All",
