@@ -15,11 +15,15 @@ configBuilder.AddJsonFile("appsettings.json")
 
 builder.Services.AddDbContext<BillingContext>();
 builder.Services.AddScoped<IBillingRepository, BillingRepository>();
+
 // Razor pages dependency injections 
 
 builder.Services.AddRazorPages();
 
 builder.Services.AddTransient<IEmailServices, DevTimeEmailServices>();
+
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 
@@ -42,5 +46,7 @@ app.MapRazorPages();
 //{
 //    await ctx.response.writeasync("welcome to freebilling");
 //});
+
+app.MapControllers();
 
 app.Run();

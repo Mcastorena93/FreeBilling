@@ -6,11 +6,12 @@ namespace FreeBilling.Web.Data
     public class BillingRepository : IBillingRepository
     {
         private readonly BillingContext _context;
-        private readonly ILogger _logger;
+        private readonly ILogger<BillingRepository> _logger;
 
         public BillingRepository(BillingContext context, ILogger<BillingRepository> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<IEnumerable<Employee>> GetEmployees()
@@ -36,6 +37,21 @@ namespace FreeBilling.Web.Data
                 return await _context.Customers
                         .OrderBy(c => c.CompanyName)
                         .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"Could not get Customers: {ex.Message}");
+                throw;
+            }
+        }
+        public async Task<Customer?> GetCustomer(int id)
+        {
+            try
+            {
+                return await _context.Customers
+                        .Where(c => c.Id == id)
+                        .FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
