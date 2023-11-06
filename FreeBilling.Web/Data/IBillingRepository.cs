@@ -8,5 +8,9 @@ public interface IBillingRepository
     Task<IEnumerable<Customer>> GetCustomersWithAddresses();
     Task<Customer?>GetCustomer(int id);
     Task<IEnumerable<Employee>> GetEmployees();
+
+    Task<TimeBill?> GetTimeBill(int id);
+    void AddEntity<T>(T entity) where T : notnull;
+
     Task<bool> SaveChanges();
 }

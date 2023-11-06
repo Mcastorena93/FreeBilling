@@ -77,6 +77,23 @@ namespace FreeBilling.Web.Data
             }
         }
 
+        public async Task<TimeBill?> GetTimeBill(int id)
+        {
+            var bill = await _context.TimeBills
+                .Include(b => b.Employee)
+                .Include(b => b.Customer)
+                .ThenInclude(c => c!.Address)
+                .Where(b => b.Id == id)
+                .FirstOrDefaultAsync();
+
+            return bill;
+        }
+
+        public void AddEntity<T>(T entity) where T : notnull
+        {
+            _context.Add(entity);
+        }
+
         public async Task<bool> SaveChanges()
         {
             try
@@ -90,5 +107,6 @@ namespace FreeBilling.Web.Data
                 throw;
             }
         }
+
     }
 }
