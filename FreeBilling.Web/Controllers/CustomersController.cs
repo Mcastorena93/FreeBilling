@@ -34,7 +34,7 @@ namespace FreeBilling.Web.Controller
                 }
                 return Ok(results);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 _logger.LogError("Failed to get customers from database.");
                 return Problem("Failed to get customers from database.");

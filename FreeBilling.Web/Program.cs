@@ -1,6 +1,10 @@
+using FluentValidation;
 using FreeBilling.Data.Entities;
+using FreeBilling.Web.Apis;
 using FreeBilling.Web.Data;
 using FreeBilling.Web.Services;
+using FreeBilling.Web.Validators;
+using Mapster;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +29,10 @@ builder.Services.AddTransient<IEmailServices, DevTimeEmailServices>();
 
 builder.Services.AddControllers();
 
+builder.Services.AddValidatorsFromAssemblyContaining<TimeBillModelValidator>();
+
+TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetEntryAssembly()!);
+
 var app = builder.Build();
 
 
@@ -48,29 +56,7 @@ app.MapRazorPages();
 //    await ctx.response.writeasync("welcome to freebilling");
 //});
 
-app.MapGet("/api/timebills/{id:int}", async (IBillingRepository repository, int id) =>
-{
-    var bill = await repository.GetTimeBill(id);
-
-    if (bill is null) Results.NotFound();
-
-    return Results.Ok(bill);
-})
-.WithName("GetTimeBill");
-
-app.MapPost("api/timebills", async (IBillingRepository repository, TimeBill model) =>
-{
-    repository.AddEntity(model);
-    if(await repository.SaveChanges())
-    {
-        var newBill = await repository.GetTimeBill(model.Id);   
-        return Results.CreatedAtRoute("GetTimeBill", new {id = model.Id}, model);
-    }
-    else
-    {
-        return Results.BadRequest();
-    }
-});
+TimeBillsApi.Register(app);
 
 app.MapControllers();
 
