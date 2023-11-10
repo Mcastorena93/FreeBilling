@@ -89,6 +89,24 @@ namespace FreeBilling.Web.Data
             return bill;
         }
 
+        async Task<IEnumerable<TimeBill>> IBillingRepository.GetTimeBillsForCustomer(int id)
+        {
+            return await _context.TimeBills
+                .Where(b => b.Customer != null && b.CustomerId == id)
+                .Include(b => b.Customer)
+                .Include(b => b.Employee)
+                .ToListAsync();
+        }
+
+        public async Task<TimeBill?> GetTimeBillForCustomer(int id, int billId)
+        {
+            return await _context.TimeBills
+                .Where(b => b.Customer != null && b.CustomerId == id && b.Id == billId)
+                .Include(b => b.Customer)
+                .Include(b => b.Employee)
+                .FirstOrDefaultAsync();
+        }
+
         public void AddEntity<T>(T entity) where T : notnull
         {
             _context.Add(entity);
@@ -107,6 +125,5 @@ namespace FreeBilling.Web.Data
                 throw;
             }
         }
-
     }
 }
