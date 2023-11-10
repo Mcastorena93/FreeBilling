@@ -13,7 +13,7 @@ public interface IBillingRepository
 
     Task<TimeBill?> GetTimeBill(int id);
     Task<IEnumerable<TimeBill>> GetTimeBillsForCustomer(int id);
-    Task<IEnumerable<TimeBill>> GetTimeBillForCustomer(int id, int billId);
+    Task<TimeBill?> GetTimeBillForCustomer(int id, int billId);
     void AddEntity<T>(T entity) where T : notnull;
 
     Task<bool> SaveChanges();
