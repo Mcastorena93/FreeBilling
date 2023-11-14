@@ -9,6 +9,8 @@ using System.Reflection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FreeBilling.Web.Data.Entities;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("BillingDb") ?? throw new InvalidOperationException("Connection string 'BillingContextConnection' not found.");
@@ -33,7 +35,16 @@ builder.Services.AddDefaultIdentity<TimeBillUser>(options =>
     .AddEntityFrameworkStores<BillingContext>();
 
 builder.Services.AddAuthentication()
-    .AddJwtBearer();
+    .AddJwtBearer(cfg =>
+    {
+        cfg.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidIssuer = builder.Configuration["Token:Issuer"],
+            ValidAudience = builder.Configuration["Token:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Token:Key"]))
+        };
+    });
 
 builder.Services.AddScoped<IBillingRepository, BillingRepository>();
 
