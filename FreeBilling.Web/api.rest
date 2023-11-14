@@ -1,5 +1,5 @@
 GET http://localhost:5000/api/customers
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0ZW1haWxAZ21haWwuY29tIiwianRpIjoiYTcyZjYyMGQtMWY4OS00OGEwLThiMTItNjM5Y2Q4YWU2NjIyIiwidW5pcXVlX25hbWUiOiJ0ZXN0ZW1haWxAZ21haWwuY29tIiwiZXhwIjoxNzAwMDAzNDk4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.9W9NDNaRdAWNLKo_Y9DFPl5N-iriZyXBxQw6xh2unYI
 ###
 
 GET http://localhost:5000/api/customers?withAddresses=true
@@ -37,4 +37,14 @@ GET http://localhost:5000/api/customers/1/timebills
 ###
 
 
-GET http://localhost:5000/api/customers/1/timebills/3
+GET http://localhost:5000/api/customers/1/timebills/
+###
+
+
+POST http://localhost:5000/api/auth/token
+Content-Type: application/json
+
+{
+  "username": "testemail@gmail.com",
+  "password": "Password1"
+}

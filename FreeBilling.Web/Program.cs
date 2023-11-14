@@ -79,6 +79,7 @@ app.MapRazorPages();
 //});
 
 TimeBillsApi.Register(app);
+AuthApi.Register(app);
 
 app.MapControllers();
 
