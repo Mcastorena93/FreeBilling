@@ -32,6 +32,9 @@ builder.Services.AddDefaultIdentity<TimeBillUser>(options =>
 })
     .AddEntityFrameworkStores<BillingContext>();
 
+builder.Services.AddAuthentication()
+    .AddJwtBearer();
+
 builder.Services.AddScoped<IBillingRepository, BillingRepository>();
 
 // Razor pages dependency injections 

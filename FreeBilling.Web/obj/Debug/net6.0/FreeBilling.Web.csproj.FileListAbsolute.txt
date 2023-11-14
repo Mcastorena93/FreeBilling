@@ -259,3 +259,4 @@ C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\bin\Debug\net6.0\Microsof
 C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\obj\Debug\net6.0\FreeBilling.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\bin\Debug\net6.0\package-lock.json
+C:\Users\MCCM\source\repos\FreeBilling\FreeBilling.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
