@@ -18,7 +18,7 @@ public class CustomersTimeBillsController : ControllerBase
         _repository = repository;
     }
 
-    [HttpGet("{id:int}/timebills")]
+    [HttpGet("")]
     public async Task<ActionResult<IEnumerable<TimeBill>>> GetCustomerTimeBills(int id)
     {
         var result = await _repository.GetTimeBillsForCustomer(id);

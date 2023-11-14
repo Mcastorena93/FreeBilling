@@ -8,6 +8,7 @@ GET http://localhost:5000/api/customers?withAddresses=true
 
 
 GET http://localhost:5000/api/customers/2
+
 ###
 
 
@@ -28,3 +29,12 @@ Content-Type: application/json
   "customerId": 1,
   "employeeId": 1
 }
+###
+
+
+GET http://localhost:5000/api/customers/1/timebills
+
+###
+
+
+GET http://localhost:5000/api/customers/1/timebills/3

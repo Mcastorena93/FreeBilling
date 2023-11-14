@@ -48,6 +48,11 @@ app.UseDefaultFiles();
 //Allows us to serve files from wwwroot.
 app.UseStaticFiles();
 
+//Add Routing
+app.UseRouting();
+
+//Add auth middleware
+app.UseAuthorization();
 
 app.MapRazorPages();
 
