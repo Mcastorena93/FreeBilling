@@ -11,6 +11,14 @@
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
-, "-vs-binding":{"ProjectOpened":["css"]}
+  "license": "ISC",
+  "-vs-binding": {
+    "ProjectOpened": [
+      "css"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-plugin-vue": "^9.18.1"
+  }
 }

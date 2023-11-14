@@ -27,6 +27,8 @@ builder.Services.AddDbContext<BillingContext>();
 builder.Services.AddDefaultIdentity<TimeBillUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
+    options.Password.RequiredLength = 8;
+    options.Password.RequireNonAlphanumeric = false;
 })
     .AddEntityFrameworkStores<BillingContext>();
 
@@ -53,7 +55,7 @@ if (builder.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 //Allows us to serve index.html as the default webpage
-app.UseDefaultFiles();
+//app.UseDefaultFiles();
 
 
 //Allows us to serve files from wwwroot.
