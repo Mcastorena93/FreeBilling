@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeBilling.Web", "FreeBilling.Web\FreeBilling.Web.csproj", "{851CA69F-BA06-493C-BF41-814AECCF7A14}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "freebilling.app", "FreeBilling.App\freebilling.app.esproj", "{541B67CA-927C-48BC-873B-9F4C2DEC6783}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "freebilling.app", "FreeBilling.app\freebilling.app.esproj", "{C2E37964-5F01-4B94-AAF1-7578623C505E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +17,12 @@ Global
 		{851CA69F-BA06-493C-BF41-814AECCF7A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{851CA69F-BA06-493C-BF41-814AECCF7A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{851CA69F-BA06-493C-BF41-814AECCF7A14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{541B67CA-927C-48BC-873B-9F4C2DEC6783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{541B67CA-927C-48BC-873B-9F4C2DEC6783}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{541B67CA-927C-48BC-873B-9F4C2DEC6783}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{541B67CA-927C-48BC-873B-9F4C2DEC6783}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{541B67CA-927C-48BC-873B-9F4C2DEC6783}.Release|Any CPU.Build.0 = Release|Any CPU
-		{541B67CA-927C-48BC-873B-9F4C2DEC6783}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C2E37964-5F01-4B94-AAF1-7578623C505E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E37964-5F01-4B94-AAF1-7578623C505E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E37964-5F01-4B94-AAF1-7578623C505E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C2E37964-5F01-4B94-AAF1-7578623C505E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E37964-5F01-4B94-AAF1-7578623C505E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E37964-5F01-4B94-AAF1-7578623C505E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
