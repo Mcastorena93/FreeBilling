@@ -4,7 +4,8 @@ module.exports = {
         "./Pages/**/*.{html,cshtml}",
         "./Areas/**/*.{html,cshtml}",
         "./wwwroot/**/*.{html,htm}",
-        "../freeBilling.app/src/**.{html,js,vue}"
+        "../freeBilling.app/src/**.{html,js,vue}",
+        "../freebilling.app/src/**.{html,js,vue}"
     ],
   theme: {
     extend: {},

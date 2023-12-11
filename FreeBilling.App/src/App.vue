@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header>
+  <header class="flex text-red-900">
     <h3>Our app</h3>
   </header>
 
