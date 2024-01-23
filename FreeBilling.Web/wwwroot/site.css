@@ -603,6 +603,10 @@ button:hover {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .h-\[calc\(100vh-75px\)\] {
   height: calc(100vh - 75px);
 }
